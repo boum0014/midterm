@@ -83,7 +83,7 @@ font-family: 'Lato', sans-serif;
     color: #ffffff;
     background-color: black;
     border-radius: 6px;
-    transition: background-color 0,4s ease;
+    transition: background-color 0.4s ease;
     text-decoration: none;
 
 }
@@ -168,7 +168,110 @@ main {
    width: 100%;
    max-width: 620px;
    position: relative;
-   z-index: 1.8;
+   z-index: 2;
    
 }
 
+.explore::before,
+.locations::before {
+
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 1;
+   background: rgba(0, 0, 0, 0.4);
+   position: relative;
+}
+
+
+.AboutUs,
+.Menu,
+.locations {
+
+padding: 32px;
+text-align: center;
+color: white;
+background-color: #000;
+
+}
+
+
+.pictures {
+    gap: 16px;
+    grid-template-columns: repeat(2,1.2fr);
+    display: grid;
+}
+
+.testament {
+
+    color: white;
+    background-color: #333;
+    padding: 32px;
+}
+
+.testimonials {
+
+align-items: center;
+margin-bottom: 16px;
+display: flex;
+
+}
+
+
+.testimonials img {
+
+    margin-right: 16px;
+}
+
+
+footer {
+
+text-align: center;
+font-family: 'Lato', sans-serif;
+color: white;
+background-color: black;
+padding: 16px;
+
+
+}
+
+
+@media (min-width:760px) {
+
+.intro h1 {
+    font-size: 42px;
+  }
+
+.intro p {
+    font-size: 24px;
+  }
+
+.pictures-item {
+    flex: 1 1 calc(50% - 16px);
+  } 
+}
+
+@media (min-width: 1100px) {
+
+
+    .intro h1 {
+        font-size: 42px;
+      }
+    
+    .intro p {
+        font-size: 24px;
+      }
+    
+    .offers {
+        justify-content: space-around;
+      } 
+
+    .offer {
+
+        flex: 1 1 28%;
+    }
+
+
+    }
+    
